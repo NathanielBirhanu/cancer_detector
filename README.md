@@ -1,6 +1,6 @@
-# 🩺 Breast Cancer Prediction System
+# Breast Cancer Prediction System
 
-## 📋 Introduction
+## Introduction
 Breast cancer is a critical health issue that affects millions globally, with early and accurate diagnosis being key to reducing its impact. This project offers a simple, user-friendly solution for predicting whether a breast tumor is benign or malignant based on user-inputted characteristics. By combining a responsive frontend form with a Flask-based machine learning backend, this system empowers users and healthcare professionals with real-time predictions to aid in decision-making.
 
 ## 🎯 Objective
