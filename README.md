@@ -1,4 +1,4 @@
-<img src="https://github.com/NathanielBirhanu/cancer_detector/blob/main/DALL%C2%B7E%202024-12-30%2022.31.15%20-%20A%20healthcare%20professional%20interacting%20with%20a%20medical%20interface%2C%20analyzing%20tumor%20data%20on%20a%20screen.%20The%20scene%20is%20focused%20on%20a%20person%20in%20a%20lab%20coat%20looki.webp" width="800" height= "200">
+<img src="https://github.com/NathanielBirhanu/cancer_detector/blob/main/DALL%C2%B7E%202024-12-30%2022.31.15%20-%20A%20healthcare%20professional%20interacting%20with%20a%20medical%20interface%2C%20analyzing%20tumor%20data%20on%20a%20screen.%20The%20scene%20is%20focused%20on%20a%20person%20in%20a%20lab%20coat%20looki.webp" width="800" height= "400">
 
 
 # Breast Cancer Prediction System
