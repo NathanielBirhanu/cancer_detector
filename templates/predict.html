@@ -1,0 +1,18 @@
+{% extends "index.html"%}
+{% block title %}Prediction Result{% endblock %}
+{% block content %}
+    <div class="result-card">
+        <h1>Prediction Result</h1>
+        <p>The tumor is predicted to be: 
+            <strong>
+                {{ prediction }} 
+                {% if prediction == 'Malignant' %}
+                    &#128308; <!-- Red circle emoji for malignant -->
+                {% else %}
+                    &#128994; <!-- Green circle emoji for benign -->
+                {% endif %}
+            </strong>
+        </p>
+        <a href="/" class="back-button">Go Back</a>
+    </div>
+{% endblock %}

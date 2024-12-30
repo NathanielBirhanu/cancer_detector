@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{%block title%}{%endblock%}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Prediction</h1>
+        {%block content%}
+        <form action="/predict" method="POST">
+            <div class="form-section" id="section1">
+                <label for="radius_mean">Radius Mean:</label>
+                <input type="number" step="0.01" name="radius_mean" required><br>
+            
+                <label for="texture_mean">Texture Mean:</label>
+                <input type="number" step="0.01" name="texture_mean" required><br>
+            
+                <label for="area_mean">Area Mean:</label>
+                <input type="number" step="0.01" name="area_mean" required><br>
+            
+                <label for="smoothness_mean">Smoothness Mean:</label>
+                <input type="number" step="0.01" name="smoothness_mean" required><br>
+            
+                <label for="compactness_mean">Compactness Mean:</label>
+                <input type="number" step="0.01" name="compactness_mean" required><br>
+                <label for="perimeter_mean">Perimeter Mean:</label>
+                <input type="number" step="0.01" name="perimeter_mean" required><br>
+            
+                <label for="concavity_mean">Concavity Mean:</label>
+                <input type="number" step="0.01" name="concavity_mean" required><br>
+            
+                <label for="concave points_mean">Concave_points Mean:</label>
+                <input type="number" step="0.01" name="concave points_mean" required><br>
+            
+                <label for="symmetry_mean">Symmetry Mean:</label>
+                <input type="number" step="0.01" name="symmetry_mean" required><br>
+            
+                <label for="fractal_dimension_mean">Fractal Dimension Mean:</label>
+                <input type="number" step="0.01" name="fractal_dimension_mean" required><br>
+                <button type="button" onclick="nextSection(2)">Next</button>
+            </div>
+            <div class="form-section" id="section2">
+                <label for="radius_se">Radius SE:</label>
+                <input type="number" step="0.01" name="radius_se" required><br>
+            
+                <label for="texture_se">Texture SE:</label>
+                <input type="number" step="0.01" name="texture_se" required><br>
+            
+                <label for="area_se">Area SE:</label>
+                <input type="number" step="0.01" name="area_se" required><br>
+            
+                <label for="smoothness_se">Smoothness SE:</label>
+                <input type="number" step="0.01" name="smoothness_se" required><br>
+            
+                <label for="compactness_se">Compactness SE:</label>
+                <input type="number" step="0.01" name="compactness_se" required><br>
+                <label for="perimeter_se">Perimeter SE:</label>
+                <input type="number" step="0.01" name="perimeter_se" required><br>
+            
+                <label for="concavity_se">Concavity SE:</label>
+                <input type="number" step="0.01" name="concavity_se" required><br>
+            
+                <label for="concave points_se">Concave_points SE:</label>
+                <input type="number" step="0.01" name="concave points_se" required><br>
+            
+                <label for="symmetry_se">Symmetry SE:</label>
+                <input type="number" step="0.01" name="symmetry_se" required><br>
+            
+                <label for="fractal_dimension_se">Fractal Dimension SE:</label>
+                <input type="number" step="0.01" name="fractal_dimension_se" required><br>
+                <button type="button" onclick="prevSection(1)">Previous</button>
+                <button type="button" onclick="nextSection(3)">Next</button>
+            </div>
+            <div class="form-section" id="section3">
+                <label for="radius_worst">Radius Worst:</label>
+                <input type="number" step="0.01" name="radius_worst" required><br>
+    
+                <label for="texture_worst">Texture Worst:</label>
+                <input type="number" step="0.01" name="texture_worst" required><br>
+    
+                <label for="area_worst">Area Worst:</label>
+                <input type="number" step="0.01" name="area_worst" required><br>
+    
+                <label for="smoothness_worst">Smoothness Worst:</label>
+                <input type="number" step="0.01" name="smoothness_worst" required><br>
+    
+                <label for="compactness_worst">Compactness Worst:</label>
+                <input type="number" step="0.01" name="compactness_worst" required><br>
+    
+                <label for="perimeter_worst">Perimeter Worst:</label>
+                <input type="number" step="0.01" name="perimeter_worst" required><br>
+    
+                <label for="concavity_worst">Concavity Worst:</label>
+                <input type="number" step="0.01" name="concavity_worst" required><br>
+    
+                <label for="concave points_worst">Concave Points Worst:</label>
+                <input type="number" step="0.01" name="concave points_worst" required><br>
+    
+                <label for="symmetry_worst">Symmetry Worst:</label>
+                <input type="number" step="0.01" name="symmetry_worst" required><br>
+    
+                <label for="fractal_dimension_worst">Fractal Dimension Worst:</label>
+                <input type="number" step="0.01" name="fractal_dimension_worst" required><br>
+                <button type="button" onclick="prevSection(2)">Previous</button>
+                <button type="submit">Predict</button>
+            </div>
+        </form>
+        {%endblock%}
+    </div>
+    <script>
+        function nextSection(section) {
+            document.querySelector('.form-section.active').classList.remove('active');
+            document.getElementById('section' + section).classList.add('active');
+        }
+
+        function prevSection(section) {
+            document.querySelector('.form-section.active').classList.remove('active');
+            document.getElementById('section' + section).classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('section1').classList.add('active');
+        });
+    </script>
+</body>
+</html>
