@@ -93,14 +93,3 @@ The machine learning model, trained using Logistic Regression, achieved:
 These metrics demonstrate the model's ability to generalize well and provide reliable predictions.
 
 ---
-
-## 🚀 Installation and Usage
-
-### **Prerequisites**
-- Python 3.8 or higher
-- Flask and Scikit-learn libraries
-
-### **Steps**
-1. Clone the repository:
-   ```bash
-   git
