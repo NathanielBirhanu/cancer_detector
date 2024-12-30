@@ -22,9 +22,6 @@ To create a lightweight and accessible web application that takes tumor characte
 - Submit tumor data and instantly receive a classification of benign or malignant.
 - Designed for quick and straightforward results.
 
-### User-Centric Design
-- Optimized for devices of all sizes, ensuring a seamless experience.
-- Clear visual hierarchy to guide users through the process.
 
 ---
 
