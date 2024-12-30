@@ -50,15 +50,22 @@ Traditional diagnostic methods often rely on subjective visual analysis, which c
 #### Framework: Flask
 - A lightweight and powerful Python web framework for handling input data and serving predictions.
 
-#### Model Integration:
-1. Data Preprocessing:
-   -Clean the data, handle missing values, and normalize features for better model performance.
-   -We also split the data into training and test sets to evaluate the model's performance on unseen data.
-2. Model Building:
-   -Implemented a Logistic Regression model using Scikit-learn to classify tumors based on their characteristics.
-   -To improve accuracy, we experimented with feature selection to remove irrelevant components and reduce dimensionality, preventing overfitting.
-3. Evaluation:
-   -Evaluated the model using common metrics such as accuracy on both the training and test datasets.
+### **Model**
+In this project, we use a **Logistic Regression** model to classify breast tumors as benign or malignant. Logistic Regression is a powerful yet simple algorithm that works well for binary classification problems like this one. It provides interpretable results and performs efficiently even on relatively small datasets.
+
+### Key Steps:
+
+#### Data Preprocessing:
+- We clean the data, handle missing values, and normalize features for better model performance.
+- We also split the data into training and test sets to evaluate the model's performance on unseen data.
+
+#### Model Building:
+- We implemented a Logistic Regression model using Scikit-learn to classify tumors based on their characteristics.
+- To improve accuracy, we experimented with feature selection to remove irrelevant components and reduce dimensionality, preventing overfitting.
+
+#### Evaluation:
+- We evaluated the model using common metrics such as accuracy on both the training and test datasets.
+
 
 #### Workflow:
 1. User submits tumor characteristics via the form.
