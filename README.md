@@ -89,9 +89,7 @@ This system utilizes the Breast Cancer Wisconsin (Diagnostic) Dataset, a widely 
 
 ## 📈 Performance
 The machine learning model, trained using Logistic Regression, achieved:
-
-- **Training Accuracy**: 98%
-- **Test Accuracy**: 95%
+- **Test Accuracy**: 98%
 
 These metrics demonstrate the model's ability to generalize well and provide reliable predictions.
 
